@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/moja-aplikacja-pwa/',
+  base: '/hello-pw/',
   plugins: [
     vue(),
     VitePWA({
@@ -11,7 +11,7 @@ export default defineConfig({
       manifest: {
         name: 'Moja Aplikacja PWA',
         short_name: 'MojaApp',
-        start_url: '.',
+        start_url: '/hello-pwa/',
         display: 'standalone',
         background_color: '#000000',
         theme_color: '#4DBA87',
